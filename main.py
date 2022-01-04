@@ -23,10 +23,12 @@ st.sidebar.write('LinkedIn: in/karlsomoray/')
 ## PAGES
 
 if page == options[0]:
+    st.write(os.listdir())
     col1, col2 = st.columns(2)
     with col2:
         image = Image.open("Selfie.jpg")
         st.image(image)
+        
         
     with col1:
         st.title('Karl Somoray')
