@@ -26,7 +26,7 @@ if page == options[0]:
     st.write(os.listdir())
     col1, col2 = st.columns(2)
     with col2:
-        image = Image.open("Images\\Selfie.jpg")
+        image = Image.open("./Images/Selfie.jpg")
         st.image(image)
         
         
