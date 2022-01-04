@@ -2,7 +2,7 @@ import helperfns as hf
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+import os
 import pydeck as pdk
 from PIL import Image
 
@@ -25,7 +25,7 @@ st.sidebar.write('LinkedIn: in/karlsomoray/')
 if page == options[0]:
     col1, col2 = st.columns(2)
     with col2:
-        image = Image.open('./Images/selfie.jpg')
+        image = Image.open(os.getcwd() + './Images/selfie.jpg')
         st.image(image)
         
     with col1:
